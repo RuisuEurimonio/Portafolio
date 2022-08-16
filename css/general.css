@@ -1,0 +1,53 @@
+:root{
+    --cl-pink: #ff00b4;
+    --cl-blue: #00ffbc;
+    --cl-blue-light:#8ea5ff;
+    --cl-purple: #c493ff;
+    --cl-black: #221e1e;
+    --cl-white: #fcfcfc;
+    --cl-off: #C0C0C0;
+    --ltr-sm: 1rem;
+    --ltr-sm2: 1.25rem;
+    --ltr-md: 1.5rem;
+    --ltr-md2: 1.75rem;
+    --ltr-bg: 2rem;
+    --ltr-bg2: 2.25rem;
+    --ltr-welcome: 10rem;
+    --ltr--subwelcome: 7rem;
+    --sz-sm: 1em;
+    --sz-md: 1.5em;
+    --sz-bg: 2em;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: var(--cl-black);
+    color: var(--cl-white);
+    font-size: 62.5%;
+}
+
+.list{
+    list-style: none;
+    margin: 0;
+}
+
+@keyframes neonPurple{
+    0%, 18%, 23%, 48%, 60%, 78%, 84%, 100%{
+        text-shadow: 0 0 .1rem var(--cl-purple),
+                    0 0 .2rem var(--cl-purple),
+                    0 0 .3rem var(--cl-purple),
+                    0 0 .4rem var(--cl-purple),
+                    0 0 .5rem var(--cl-purple),
+                    0 0 .7rem var(--cl-purple),
+                    0 0 .10rem var(--cl-purple);
+    }
+
+    25%,50%,80%{
+        text-shadow: none;
+    }
+}

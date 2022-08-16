@@ -1,0 +1,46 @@
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header__title{
+    font-size: var(--ltr-bg);
+    padding-left: var(--sz-sm);
+    text-shadow: 0 0 .1rem var(--cl-pink),
+    0 0 .3rem var(--cl-pink),
+    0 0 .5rem var(--cl-pink),
+    0 0 .7rem var(--cl-pink),
+    0 0 .9rem var(--cl-pink),
+    0 0 .11rem var(--cl-pink),
+    0 0 .13rem var(--cl-pink),
+    0 0 .17rem var(--cl-pink),
+    0 0 .25rem var(--cl-pink);
+}
+
+.header__list{
+    padding-right: var(--sz-bg);
+}
+
+.list--header{
+    display: flex;
+    flex-direction: row;
+    font-size: var(--ltr-sm2);
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+.list__item{
+    color: var(--cl-off);
+    margin: var(--sz-sm);
+    cursor: pointer;
+}
+
+.list__item--active,
+.list__item:hover {
+    color: var(--cl-white);
+    animation: neonPurple 2s infinite alternate-reverse steps(5);
+}
