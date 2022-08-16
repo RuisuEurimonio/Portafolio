@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="./css/glitch.css">
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/inicio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;700&family=Rubik+Glitch&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/220d9033da.js" crossorigin="anonymous"></script>
     <title>Luis Linares Portafolio.</title>
 </head>
-<body>
+<body class="scanlines">
     
     <header class="header">
         <h1 class="header__title"> 
@@ -22,47 +23,47 @@
         </h1>
         <nav class="header__list">
             <ul class="list list--header">
-                <li class="list__item list__item--active"> Inicio. </li>
-                <li class="list__item"> Sobre mi. </li>
-                <li class="list__item"> Habilidades. </li>
-                <li class="list__item"> Proyectos. </li>
-                <li class="list__item"> Contactos. </li>
+                <li class="list__item list__item--active" id="inicio"> Inicio. </li>
+                <li class="list__item" id="sobreMi"> Sobre mi. </li>
+                <li class="list__item" id="habilidades"> Habilidades. </li>
+                <li class="list__item" id="proyectos"> Proyectos. </li>
+                <li class="list__item" id="contacto"> Contacto. </li>
             </ul>
         </nav>
     </header>
 
-    <section class="scanlines">
+    <section class="section--inicio" id="section--inicio">
         <div class="title">
             <!-- Code by Gaby code from https://www.peengler.com/nice-text-effect-glitch-with-css/ -->
-            <div class="glitch" data-text="Bienvenido.">Bienvenido.</div>
+            <div class="glitch title" data-text="Bienvenido.">Bienvenido.</div>
             <div class="glow">Bienvenido.</div>
-            <p class="subtitle">A mi portafolio de desarrollador.</p>
+            <p class="subtitle">A mi portafolio de desarrollador</p>
+            <p class="subtitle">Donde podra encontrar una</p>
+            <p class="subtitle"><Strong>Horientación</Strong></p>
         </div>
-        <div>
-            <button>
-                <i class="fa-solid fa-circle-arrow-left"></i>
-            </button>
-            <p>Contactame.</p>
+        <div class="navegation navegation--left">
+            <i class="fa-solid fa-circle-arrow-left"></i>
+            <p class="navegation__option">Contactame.</p>
         </div>
-        <div>
-            <button>
-                <i class="fa-solid fa-circle-arrow-right"></i>
-            </button>
-            <p>Habilidades.</p>
+        <div class="navegation navegation--right">
+            <i class="fa-solid fa-circle-arrow-right"></i>
+            <p class="navegation__option">Habilidades.</p>
         </div>
-        <div>
-            <button>
-                <i class="fa-solid fa-circle-arrow-up"></i>
-            </button>
-            <p>Sobre mi.</p>
+        <div class="navegation navegation--up">
+            <i class="fa-solid fa-circle-arrow-up"></i>
+            <p class="navegation__option">Sobre mi.</p>
         </div>
-        <div>
-            <button>
-                <i class="fa-solid fa-circle-arrow-down"></i>
-            </button>
-            <p>Proyectos.</p>
+        <div class="navegation navegation--bottom">
+            <i class="fa-solid fa-circle-arrow-down"></i>
+            <p class="navegation__option">Proyectos.</p>
         </div>
     </section>
+
+    <section class="section--sobreMi" id="section--sobreMi">
+
+    </section>
+
+    <script src="./js/events.js"></script>
 
 </body>
 </html>
