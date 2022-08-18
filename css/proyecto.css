@@ -1,0 +1,137 @@
+.section--proyecto{
+    top: 100vh;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.title--proyectos{
+    font-size: var(--ltr-section-title);
+}
+
+.information{
+    max-width: 40vw;
+    margin: 2rem;
+}
+
+.information__title,
+.information__text{
+    font-size: var(--ltr-sm);
+    margin: .2rem 0;
+    text-align: center;
+}
+
+.information__title{
+    font-weight: bold;
+    font-size: var(--ltr-md2);
+}
+
+.projects{
+    margin: 0 auto 1rem;
+    width: 90%;
+    height: 37%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects__title{
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: var(--ltr-sm2);
+    color: var(--cl-off);
+    animation: letterPurpleNeon 2s infinite alternate-reverse steps(4);
+    height: 7%;
+}
+
+.projects__list{
+    list-style: none;
+    padding:0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    height: 93%;
+    justify-content: space-evenly
+}
+
+.projects__item{
+    border: .1rem solid var(--cl-off);
+    border-radius: .5rem;
+    animation:boxPurpleNeon 2s infinite alternate-reverse steps(2);
+    width: 27%;
+    height: 100%;
+}
+
+.projects__figure{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.projects__a{
+    width: 90%;
+    margin: 1rem auto .5rem;
+    height: 10rem;
+}
+
+.projects__img{
+    margin: 1rem auto .5rem;
+    width: 90%;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: .5rem;
+    border: .1rem solid var(--cl-off);
+    animation:boxPurpleNeon 2s infinite alternate-reverse steps(2);
+}
+
+.projects__img--a{
+    width: 100%;
+    margin: 0;
+}
+
+.projects__fig{
+    font-size: var(--ltr-sm2);
+    margin: 0;
+    font-weight: bold;
+}
+
+.projects__description{
+    font-size: var(--ltr-sm);
+    margin: 0;
+}
+
+.projects__git{
+    color: var(--cl-off);
+    font-size: var(--ltr-sm)
+}
+
+.footer{
+    width: 100%;
+    background-color: var(--cl-footer);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .5rem;
+}
+
+.footer__message{
+    margin: .5rem auto 0;
+}
+
+.footer__a{
+    font-size: var(--ltr-sm);
+    color: var(--cl-off);
+}
+
+.projects__git:hover,
+.projects__git:active,
+.projects__git:focus,
+.footer__a:hover,
+.footer__a:active,
+.footer__a:focus{
+    animation: letterPurpleNeon 2s infinite alternate-reverse steps(4);
+}

@@ -17,24 +17,29 @@ let inicioSobreMi = document.getElementById("inicioSobreMi");
 //Botones de habilidades.
 let inicioHabilidades = document.getElementById("inicioHabilidades");
 
-//Botones de contacto
+//Botones de contacto.
 let inicioContacto = document.getElementById("inicioContacto");
+
+//Botones de proyecto.
+let inicioProyecto = document.getElementById("inicioProyecto");
 
 //vistas generales
 let inicioView = document.getElementById("section--inicio");
 let sobreMiView = document.getElementById("section--sobreMi");
 let habilidadesView = document.getElementById("section--habilidades");
 let contactoView = document.getElementById("section--contacto");
+let proyectoView = document.getElementById("section--proyecto");
 
 //Eventos Botones Inicio
 sobreMiInicio.addEventListener("click",inicioToSobreMi);
 habilidadesInicio.addEventListener("click", inicioToHabilidades);
-proyectosInicio.addEventListener("click",()=>{});
+proyectosInicio.addEventListener("click",inicioToProyectos);
 contactameInicio.addEventListener("click",inicioToContacto);
 
 inicioSobreMi.addEventListener("click",sobreMiToInicio);
 inicioHabilidades.addEventListener("click",habilidadesToInicio);
-inicioContacto.addEventListener("click",contactoToInicio)
+inicioContacto.addEventListener("click",contactoToInicio);
+inicioProyecto.addEventListener("click",proyectosToInicio)
 
 function timeChangeNavbar(element){
     setTimeout(function(){
@@ -61,6 +66,12 @@ function inicioToContacto(){
     timeChangeNavbar(contactoBtn);
 }
 
+function inicioToProyectos(){
+    inicioView.style.top = "-100vh";
+    proyectoView.style.top= "0";
+    timeChangeNavbar(proyectosBtn);
+}
+
 function sobreMiToInicio(){
     sobreMiView.style.top = "-100vh";
     inicioView.style.top = "0";
@@ -77,4 +88,10 @@ function contactoToInicio(){
     inicioView.style.right = "0";
     contactoView.style.right = "100vw";
     timeChangeNavbar(contactoBtn);
+}
+
+function proyectosToInicio(){
+    proyectoView.style.top= "100vh";
+    inicioView.style.top = "0";
+    timeChangeNavbar(proyectosBtn);
 }
