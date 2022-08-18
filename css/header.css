@@ -26,21 +26,21 @@
     padding-right: var(--sz-bg);
 }
 
-.list--header{
+.list__header{
     display: flex;
     flex-direction: row;
     font-size: var(--ltr-sm2);
     font-family: 'Baloo Thambi 2', cursive;
 }
 
-.list__item{
+.list__item_header{
     color: var(--cl-off);
     margin: var(--sz-sm);
     cursor: pointer;
 }
 
-.list__item--active,
-.list__item:hover {
+.list__item_header--active,
+.list__item_header:hover {
     color: var(--cl-white);
     animation: neonPurple 2s infinite alternate-reverse steps(5);
 }

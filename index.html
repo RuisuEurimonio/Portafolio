@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/glitch.css">
+    <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="stylesheet" href="./css/sobreMi.css">
+    <link rel="stylesheet" href="./css/habilidades.css">
+    <link rel="stylesheet" href="./css/contacto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;700&family=Rubik+Glitch&display=swap" rel="stylesheet">
@@ -18,52 +22,223 @@
     
     <header class="header">
         <h1 class="header__title"> 
-            <span class="glitch glitch--title" data-text="Ruisu"> Ruisu </span>
-            <span class="glitch glitch--title" data-text="Eurimonio"> Eurimonio. </span>
+            <span class="glitch glitch--withe" data-text="Luis"> Luis </span>
+            <span class="glitch glitch--withe" data-text="Linares"> Linares. </span>
         </h1>
         <nav class="header__list">
-            <ul class="list list--header">
-                <li class="list__item list__item--active" id="inicio"> Inicio. </li>
-                <li class="list__item" id="sobreMi"> Sobre mi. </li>
-                <li class="list__item" id="habilidades"> Habilidades. </li>
-                <li class="list__item" id="proyectos"> Proyectos. </li>
-                <li class="list__item" id="contacto"> Contacto. </li>
+            <ul class="list list__header">
+                <li class="list__item_header list__item_header--active" id="inicio"> Inicio. </li>
+                <li class="list__item_header" id="sobreMi"> Sobre mi. </li>
+                <li class="list__item_header" id="habilidades"> Habilidades. </li>
+                <li class="list__item_header" id="proyectos"> Proyectos. </li>
+                <li class="list__item_header" id="contacto"> Contacto. </li>
             </ul>
         </nav>
     </header>
 
-    <section class="section--inicio" id="section--inicio">
+    <section class="section section--inicio" id="section--inicio">
         <div class="title">
             <!-- Code by Gaby code from https://www.peengler.com/nice-text-effect-glitch-with-css/ -->
             <div class="glitch title" data-text="Bienvenido.">Bienvenido.</div>
             <div class="glow">Bienvenido.</div>
             <p class="subtitle">A mi portafolio de desarrollador</p>
             <p class="subtitle">Donde podra encontrar una</p>
-            <p class="subtitle"><Strong>Horientación</Strong></p>
+            <p class="subtitle"><Strong>Orientación</Strong></p>
         </div>
-        <div class="navegation navegation--left">
+        <div class="navegation navegation--left" id="contactameInicio">
             <i class="fa-solid fa-circle-arrow-left"></i>
             <p class="navegation__option">Contactame.</p>
         </div>
-        <div class="navegation navegation--right">
+        <div class="navegation navegation--right" id="habilidadesInicio">
             <i class="fa-solid fa-circle-arrow-right"></i>
             <p class="navegation__option">Habilidades.</p>
         </div>
-        <div class="navegation navegation--up">
+        <div class="navegation navegation--up" id="sobreMiInicio">
             <i class="fa-solid fa-circle-arrow-up"></i>
             <p class="navegation__option">Sobre mi.</p>
         </div>
-        <div class="navegation navegation--bottom">
+        <div class="navegation navegation--bottom" id="proyectosInicio">
             <i class="fa-solid fa-circle-arrow-down"></i>
             <p class="navegation__option">Proyectos.</p>
         </div>
     </section>
 
-    <section class="section--sobreMi" id="section--sobreMi">
+    <section class="section section--sobreMi" id="section--sobreMi">
+        <div class="navegation navegation--bottom" id="inicioSobreMi">
+            <i class="fa-solid fa-circle-arrow-down"></i>
+            <p class="navegation__option">Inicio.</p>
+        </div>
+        <div class="title title--sobreMi " data-text="Sobre mi.">
+            <span class="glitch glitch-sobreMi glitch--withe" data-text="Sobre"> Sobre </span>
+            <span class="glitch glitch-sobreMi glitch--withe" data-text="mi."> mi. </span>
+        </div>
+        <div class="description">
+            <p class="description__text"> Soy un apasionado por la tecnología y todo su ciclo de vida, nacido en Colombia, Bogotá, donde actualmente con 19 años y gracias a mi autoaprendizaje y estudio he logrado entrar en este gran mundo con la meta de ser un desarrollador Fullstack, y así poder ayudar a toda entidad, empresa o persona para apartar su cupo en este mundo, virtualizando sus ideas y metas, orientándolos hacía la mejor versión de su idea. </p>
+            <h3 class="description__subtitle"> Análista y desarrollador de sistemas de información. </h3>
+            <h2 class="description__title"> Luis Felipe Linares Perdomo. </h2>
+        </div>
+        <div class="cards">
+            <div class="card card--mintic">
+                <h2 class="card__title"> Curso de programación Minctic 2022. </h2>
+                <h3 class="card__subtitle"> 2021 - 2021 (800 horas). </h3>
+                <p class="card__text"> Curso de programación realizado en la universidad Sergio Arboleda, desarrollando una lógica de programación con Python, aprendiendo a crear aplicativos de escritorio con Java y aplicaciones web con Java y Javascript/React. </p>
+            </div>
+            <div class="card card--details">
+                <h2 class="card__title"> Detalles personales.</h2>
+                <P class="card__text">Como futuro egresado Sena en el programa ADSI, aprovechando mis intereses en la tecnologia, desarrollo, diseño, mejora y analisis para dar una solución a problemos relacionados a las TI en la actualidad, con el fin de mejorar la eficiencia del mercado y de los procesos del mismo.</P>
+            </div>
+            <div class="card card--sena">
+                <h2 class="card__title"> Tecnólogo Análisis y desarrollo de sistemas de información. </h2>
+                <h3 class="card__subtitle"> 2021 - 2023 (24 meses). </h3>
+                <p class="card__text"> Programa tecnologico realizado en el Sena en el centro de servicios financieros, estudiando el ciclo de vida del software involucrandome en las diferentes fases de identificación, analisis, diseño, desarrollo e implementación, realizando un proyecto real con Java, JavaScript y MySQL con buenas practicas y documentación respectiva.</p>
+            </div>
+        </div>
+    </section>
 
+    <section class="section section--habilidades" id="section--habilidades">
+        <div class="navegation navegation--left" id="inicioHabilidades">
+            <i class="fa-solid fa-circle-arrow-left"></i>
+            <p class="navegation__option">Inicio.</p>
+        </div>
+        <div class="title title--habilidades " data-text="Habilidades.">
+            <span class="glitch glitch-habilidades glitch--withe" data-text="Habilidades."> Habilidades. </span>
+        </div>
+        <ul class="cards cards--skills">
+            <li class="card__item card__item--skills">
+                <h2 class="card__icon"> 
+                    <i class="fa-brands fa-html5"></i>    
+                </h2>
+                <h3 class="card__title card__title--skills"> HTML5. </h3>
+                <p class="card__text"> Tecnología para el estructurado de las paginas web por medio de etiquetas. </p>
+            </li>
+            <li class="card__item card__item--skills">
+                <h2 class="card__icon"> 
+                    <i class="fa-brands fa-css3-alt"></i>
+                </h2>
+                <h3 class="card__title card__title--skills"> CSS3. </h3>
+                <p class="card__text"> Tecnología para agregar estilos a una estructura realizada con HTML. </p>
+            </li>
+            <li class="card__item card__item--skills">
+                <h2 class="card__icon"> 
+                    <i class="fa-brands fa-square-js"></i>
+                </h2>
+                <h3 class="card__title card__title--skills"> JavaScript. </h3>
+                <p class="card__text"> Lenguaje de programación que es utilizado para manipular el HTML y CSS agregando interacción a una pagina web. </p>
+            </li>
+            <li class="card__item card__item--skills">
+                <h2 class="card__icon"> 
+                    <i class="fa-brands fa-java"></i>
+                </h2>
+                <h3 class="card__title card__title--skills"> Java. </h3>
+                <p class="card__text"> Lenguaje de programación multiproposito y multiplataforma, con caracteristicas como la robustes y de ser compilado. </p>
+            </li>
+            <li class="card__item card__item--skills">
+                <h2 class="card__icon"> 
+                    <i class="fa-brands fa-react"></i>
+                </h2>
+                <h3 class="card__title card__title--skills"> React. </h3>
+                <p class="card__text"> Libreria de JavaScript para la realización de paginas web reactivas en base a la reutilización de componentes. </p>
+            </li>
+            <li class="card__item card__item--skills">
+                <h2 class="card__icon"> 
+                    <i class="fa-brands fa-linux"></i>
+                </h2>
+                <h3 class="card__title card__title--skills"> Linux. </h3>
+                <p class="card__text"> Sistema operativo de código abierto, siendo utilizado comunmente en la administración de servidores. </p>
+            </li>
+            <li class="card__item card__item--skills">
+                <h2 class="card__icon"> 
+                    <i class="fa-brands fa-bootstrap"></i>
+                </h2>
+                <h3 class="card__title card__title--skills"> Bootstrap. </h3>
+                <p class="card__text"> Libreria de diseño CSS para paginas web por medio de clases. </p>
+            </li>
+            <li class="card__item card__item--skills">
+                <h2 class="card__icon"> 
+                   <img src="./src/svg/spring.svg" alt="">
+                </h2>
+                <h3 class="card__title card__title--skills"> SpringBoot. </h3>
+                <p class="card__text"> Tecnología de Java para la creación de microservicios. </p>
+            </li>
+            <li class="card__item card__item--skills">
+                <h2 class="card__icon"> 
+                   <img src="./src/svg/mysql-icon.svg" alt="">
+                </h2>
+                <h3 class="card__title card__title--skills"> MySQL. </h3>
+                <p class="card__text"> Base de datos relacional. </p>
+            </li>
+            <li class="card__item card__item--skills">
+                <h2 class="card__icon"> 
+                    <i class="fa-brands fa-git-alt"></i>
+                </h2>
+                <h3 class="card__title card__title--skills"> Git. </h3>
+                <p class="card__text"> Tecnología con la que se manejan las versiones de un software y se hace trabajo colaborativo. </p>
+            </li>
+            <li class="card__item card__item--skills">
+                <h2 class="card__icon"> 
+                   <img src="./src/svg/mongodb-icon.svg" alt="">
+                </h2>
+                <h3 class="card__title card__title--skills"> MongoDB. </h3>
+                <p class="card__text"> Base de datos no relacional. </p>
+            </li>
+            <li class="card__item card__item--skills">
+                <h2 class="card__icon"> 
+                   <img src="./src/svg/postgresql-icon.svg" alt="">
+                </h2>
+                <h3 class="card__title card__title--skills"> PostgreSQL. </h3>
+                <p class="card__text"> Base de datos relacional. </p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section section--contacto" id="section--contacto">
+        <div class="navegation navegation--right" id="inicioContacto">
+            <i class="fa-solid fa-circle-arrow-right"></i>
+            <p class="navegation__option">Inicio.</p>
+        </div>
+        <div class="title title--contacto " data-text="Contacto.">
+            <span class="glitch glitch-contacto glitch--withe" data-text="Contacto."> Contacto. </span>
+        </div>
+        <div class="container">
+            <div class="container__items">
+                <div class="container__forms">
+                    <h2 class="container__placeholder"> Escribeme. <i class="fa-solid fa-arrow-pointer"></i> </h2>
+                    <div class="container__bar scanlines">
+                        <div class="container__form">
+                            <div class="container__item">
+                                <h2 class="container__placeholder container__placeholder--box"> Escribeme. </h2>
+                            </div>
+                            <div class="container__item">
+                                <label for="name" class="container__item_title"> Nombre. </label>
+                                <input type="text" id="name" name="name" placeholder="Ej. Gabriel Díaz." class="container__item_input" required>
+                            </div>
+                            <div class="container__item">
+                                <label for="mensaje" class="container__item_title"> Mensaje. </label>
+                                <textarea id="mensaje" name="mensaje" placeholder="Ej. El motivo de este mensajes es ..." class="container__item_input container__item_input--textarea" required></textarea>
+                            </div>
+                            <div class="container__item">
+                                <input type="submit" text="Enviar." class="container__item_button" id="buttonForm">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__social">
+                    <h2 class="container__placeholder"> Contactame. <i class="fa-solid fa-arrow-pointer"></i> </h2>
+                    <div class="container__list scanlines">
+                        <h2 class="container__placeholder container__placeholder--box"> Mis redes sociales. </h2>
+                        <ul class="list list--social">
+                            <li class="list__item list__item--social"> <a class="list__a" href="https://github.com/RuisuEurimonio" target="_blank"> GitHub. </a> </li>
+                            <li class="list__item list__item--social"> <a class="list__a" href="https://www.linkedin.com/in/luis-felipe-linares-perdomo/" target="_blank"> LinkedIn. </a> </li>
+                            <li class="list__item list__item--social"> <a class="list__a" href="https://www.youtube.com/c/RuisuEurimonio" target="_blank"> YouTube. </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="./js/events.js"></script>
+    <script src="./js/form.js"></script>
 
 </body>
 </html>

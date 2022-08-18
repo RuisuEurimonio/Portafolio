@@ -1,0 +1,42 @@
+.section--habilidades{
+    top: 0;
+    right: -100vw;
+    bottom: 0;
+    justify-content: flex-start
+}
+
+.title--habilidades{
+    font-size: var(--ltr-section-title);
+    position: relative;
+    left: 10rem;
+    z-index: -10;
+}
+
+.cards--skills{
+    position: absolute;
+    width: 90%;
+    height: 95%;
+    flex-wrap: wrap;
+    bottom: 1rem;
+    z-index: -1;
+    align-items: center;
+}
+
+.card__item--skills{
+    margin:1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: .1rem solid var(--cl-white);
+    border-radius: .7rem;
+    animation: boxBlueLightNeon 2s infinite alternate-reverse steps(5);
+}
+
+.card__title--skills{
+    animation:  letterBlueLightNeon 2s infinite alternate-reverse steps(5);
+}
+
+.card__icon img{
+    width: var(--ltr-bg)
+}

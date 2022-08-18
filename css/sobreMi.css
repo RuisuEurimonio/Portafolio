@@ -1,0 +1,44 @@
+.section--sobreMi{
+    top: -100vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    flex-direction: column-reverse;
+    justify-content: space-center;
+}
+
+.title--sobreMi{
+    font-size: var(--ltr-section-title);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.description{
+    max-width: 40vw;
+    margin: 2rem
+}
+
+.description,
+.description__text,
+.description__subtitle,
+.description__title{
+    text-align: center;
+}
+
+.description__text{
+    font-size: var(--ltr-sm);
+    text-align: center;
+}
+
+.description__subtitle{
+    font-size: var(--ltr-sm2);
+    margin: 0;
+}
+
+.description__title{
+    font-size: var(--ltr-md2);
+    margin: 0;
+    font-weight: bold;
+}
