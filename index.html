@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
     <link rel="stylesheet" href="./css/glitch.css">
     <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="./css/general.css">
@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./css/habilidades.css">
     <link rel="stylesheet" href="./css/contacto.css">
     <link rel="stylesheet" href="./css/proyecto.css">
+    <link rel="stylesheet" href="./css/landingPage.css">
+    <link rel="stylesheet" href="./css/alertMobile.css">
     <link rel="shortcut icon" href="./src/img/ruisu.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +24,7 @@
 </head>
 <body class="scanlines">
     
-    <header class="header">
+    <header class="header" id="header">
         <h1 class="header__title"> 
             <span class="glitch glitch--withe" data-text="Luis"> Luis </span>
             <span class="glitch glitch--withe" data-text="Linares"> Linares. </span>
@@ -37,6 +39,22 @@
             </ul>
         </nav>
     </header>
+
+    <section class="landing_page " id="landingPage">
+        <h1 class="landing_text stack">
+            <span style="--index: 0;">Cargando.</span>
+            <span style="--index: 1;">Cargando.</span>
+            <span style="--index: 2;">Cargando.</span>
+        </h1>
+    </section>
+
+    <section class="alert_mobile" id="alertMobile">
+        <h1 class="alert_text stack">
+            <span style="--index: 0;"> Página no soportada para celulares. </span>
+            <span style="--index: 1;"> Página no soportada para celulares. </span>
+            <span style="--index: 2;"> Página no soportada para celulares. </span>
+        </h1>
+    </section>
 
     <section class="section section--inicio" id="section--inicio">
         <div class="title">
@@ -293,6 +311,8 @@
 
     <script src="./js/events.js"></script>
     <script src="./js/form.js"></script>
+    <script src="./js/landingPage.js"></script>
+    <script src="./js/alertMobile.js"></script>
 
 </body>
 </html>
